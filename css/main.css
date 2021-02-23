@@ -3013,7 +3013,6 @@ header input[type="submit"] {
 		left: 35%;
 	}
 	.wrap_callback .cboxElement{
-		width: 45%;
 		font-size: 15px;
 	}
 	.wrap_callback{
@@ -3029,6 +3028,11 @@ header input[type="submit"] {
 }
 
   @media only screen and (max-width: 422px) {
+
+		.wrap_callback .cboxElement{
+			width: 45%;
+			font-size: 15px;
+		}
 		.check-pass input[type="text"]{
 			width: 100%;
 	}
