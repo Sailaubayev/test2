@@ -1,0 +1,155 @@
+.call_out, .facebook, .instagram, .male_user, .phone, .vk, .basket_loaded, .call_in, .earphones_microphone, .emoticon, .clock, .emoticon2, .forma_1, .forma2, .forma3, .forma4, .forma5, .hourglass, .people1, .people2, .people3, .people4, .shield, .Wallet, .like{
+	background: url('../img/sprites.png') no-repeat;
+}
+
+.call_out{
+	background-position: -19px -15px ;
+	width: 15px;
+	height: 23px;
+}
+
+.facebook{
+	background-position: -66px -14px ;
+	width: 10px;
+	height: 22px;
+	margin: 19px 0px 19px 8px;
+}
+
+.instagram{
+	background-position: -112px -12px ;
+	width: 22px;
+	height: 22px;
+}
+
+.male_user{
+	background-position: -18px -64px ;
+	width: 16px;
+	height: 16px;
+}
+
+.phone{
+	background-position: -21px -113px ;
+	width: 10px;
+	height: 16px;
+}
+
+.vk{
+	background-position: -60px -67px ;
+	width: 26px;
+	height: 15px;
+}
+
+.basket_loaded{
+	background-position: -102px -105px ;
+	width: 43px;
+	height: 42px;
+}
+
+.call_in{
+	background-position: -54px -203px ;
+	width: 43px;
+	height: 45px;
+}
+
+.earphones_microphone{
+	background-position: 0 -151px ;
+	width: 44px;
+	height: 45px;
+}
+
+.emoticon{
+	background-position: 0 -201px ;
+	width: 45px;
+	height: 45px;
+}
+
+.clock{
+	background-position: -53px -152px ;
+	width: 43px;
+	height: 45px;
+}
+
+.emoticon2{
+	background-position: -52px -102px ;
+	width: 45px;
+	height: 45px;
+}
+
+.forma_1{
+	background-position: -152px -87px ;
+	width: 75px;
+	height: 72px;
+}
+
+.forma2{
+	background-position: -156px -9px ;
+	width: 75px;
+	height: 68px;
+}
+
+.forma3{
+	background-position: -241px -6px ;
+	width: 68px;
+	height: 75px;
+}
+
+.forma4{
+	background-position: -150px -176px ;
+	width: 75px;
+	height: 74px;
+}
+
+.forma5{
+	background-position: -243px -89px ;
+	width: 52px;
+	height: 75px;
+}
+
+.hourglass{
+	background-position: -109px -203px ;
+	width: 31px;
+	height: 47px;
+}
+
+.people1{
+	background-position: -86px -273px ;
+	width: 75px;
+	height: 75px;
+}
+
+.people2{
+	background-position: -177px -272px ;
+	width: 75px;
+	height: 75px;
+}
+
+.people3{
+	background-position: 0 -275px ;
+	width: 75px;
+	height: 75px;
+}
+
+.people4{
+	background-position: -232px -180px ;
+	width: 75px;
+	height: 75px;
+}
+
+.like{
+	background: url('../img/058.png') no-repeat;
+    width: 46px;
+    height: 47px;
+}
+
+.shield{
+	background-position: -105px -153px ;
+	width: 38px;
+	height: 46px;
+}
+
+.Wallet{
+	background-position: -103px -53px ;
+	width: 45px;
+	height: 41px;
+}
+

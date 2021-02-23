@@ -1,0 +1,56 @@
+@media only screen and (max-width: 768px) {
+	.form_wrap {
+	    width: 454px !important;
+	    height: auto !important;
+	}
+	.form_left {
+	    width: 100% !important;
+	    float: none;
+	}
+	.form_right {
+	    width: 100% !important;
+	    float: none;
+	}
+	.form_right > p:first-child {
+	    margin: 34px 0px 30px 26px;
+	}
+
+	#cboxLoadedContent {
+	    overflow: visible !important;
+	}
+
+	/*#cboxClose {
+	    position: absolute;
+	    top: -30px;
+	    right: 190px;
+	    background: transparent url("../img/form/Close.png") no-repeat scroll 0% 0%;
+	    width: 50px;
+	    height: 50px;
+	}*/
+}
+
+@media only screen and (max-width: 599px) {
+	.form_wrap {
+	    width: 280px !important;
+	    height: auto !important;
+	}
+	.form_right > p:first-child {
+	    margin: 34px 0px 30px 10px !important;
+	    text-align: center !important;
+	}
+	.form_wrap form {
+		padding-left: 9px;
+	}
+	.form_left p:first-child,
+	.form_left p:last-child {
+	    margin-left: 10px !important;
+	}
+	.form_left ul {
+	    padding-left: 5px !important;
+	}
+
+	/*#cboxClose {
+	    top: -65px !important;
+	    right: -1px !important;
+	}*/
+}
