@@ -2344,6 +2344,11 @@ header input[type="submit"] {
 
 
  @media only screen and (max-width: 767px)  {
+	 .discount_block{
+		background-size: 250%;
+		background-position: top;
+    background-position-y: 150px;
+	 }
 	#cboxClose {
 		display: none;
 	}
@@ -2826,7 +2831,9 @@ header input[type="submit"] {
  }
 
  @media only screen and (max-width: 460px) {
-
+	.discount_block{
+    background-position-y: 216px;
+	 }
 
 
     .repair_of_apartments {
@@ -3208,6 +3215,9 @@ header input[type="submit"] {
  }
 
   @media only screen and (max-width: 384px) {
+		.discount_block{
+			background-position-y: 150px;
+		 }
 .block_time .timer-separator{
 	font-size: 36px;
 }
