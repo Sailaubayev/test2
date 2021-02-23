@@ -2344,6 +2344,23 @@ header input[type="submit"] {
 
 
  @media only screen and (max-width: 767px)  {
+	.discount_block-text{
+		background-color: rgba(0, 0, 0, 0.5);
+		border: 2px dashed #000000;
+		padding: 10px;
+	}
+
+	.discount_block-text .discount{
+		color: #ffffff;
+	}
+
+
+	 .t_timer{
+		 background-color: rgba(0, 0, 0, 0.5);
+			border: 2px dashed #000000;
+			color: #ffffff;
+			margin: 10px 0;
+	 }
 	 .discount_block{
 		background-size: 250%;
 		background-position: top;
@@ -2930,10 +2947,6 @@ header input[type="submit"] {
 	    font-size: 24px;
 	    width: 100%;
 	}
-	.timer01 .timer_block1 .t_timer {
-	    margin-left: 21px;
-        margin-top: 33px;
-	}
 	header input[type="submit"] {
     -webkit-appearance: button;
 	    margin-left: 2px;
@@ -3379,10 +3392,6 @@ header input[type="submit"] {
 	.pictures_block img {
 		height: 51px;
 	}
-    .timer01 .timer_block1 .t_timer {
-        margin-left: 21px;
-        margin-top: 15px;
-    }
 	.repair_of_apartments {
 	    font-size: 18px;
 	}
