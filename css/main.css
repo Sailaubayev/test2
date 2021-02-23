@@ -2346,7 +2346,7 @@ header input[type="submit"] {
  @media only screen and (max-width: 767px)  {
 	#cboxClose {
 		display: none;
-}
+	}
 
 	 .description_of_services .row{
 		 display: block;
@@ -2433,7 +2433,7 @@ header input[type="submit"] {
 	.menu_nav {
 		display: block;
 		-webkit-font-smoothing: antialiased;
-		background: blue;
+		background: #bbbbbb;
 		position: fixed;
 		z-index: 20;
 		top: 0;
@@ -2453,7 +2453,7 @@ header input[type="submit"] {
 		position: relative;
 		width: 100%;
 		list-style-type: none;
-		color: white;
+		color: #000000;
 		font-size: 22px;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 	}
@@ -2481,7 +2481,7 @@ header input[type="submit"] {
 		width: 100%;
 		height: 100%;
 		text-decoration: none;
-		color: white;
+		color: #000000;
 		font-size: 20px;
 		padding: 10px;
 	}
@@ -2496,7 +2496,7 @@ header input[type="submit"] {
 		font-size: 20px;
 		padding: 10px;
 		margin-top: 10px;
-		background-color: blueviolet;
+		background-color: #ff0000;
 	}
 	
 	.menu_hidden {
@@ -2534,7 +2534,7 @@ header input[type="submit"] {
 		border-radius: 3px;
 		width: 34px;
 		height: 4px;
-		background: blue;
+		background: #ff0000;
 		margin: auto;
 		position: absolute;
 		top: 0;
@@ -2552,7 +2552,7 @@ header input[type="submit"] {
 		position: absolute;
 		top: -10px;
 		left: 0;
-		background: blue;
+		background: #ff0000;
 		display: inline-block;
 		width: 34px;
 		height: 4px;
@@ -3006,7 +3006,8 @@ header input[type="submit"] {
 		left: 35%;
 	}
 	.wrap_callback .cboxElement{
-		width: 170px;
+		width: 45%;
+		font-size: 15px;
 	}
 	.wrap_callback{
 	right: 0;
