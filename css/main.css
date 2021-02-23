@@ -3022,6 +3022,12 @@ header input[type="submit"] {
 }
 
   @media only screen and (max-width: 422px) {
+		.check-pass input[type="text"]{
+			width: 100%;
+	}
+	.check-fines .captcha-block .vehicle_number{
+		width: 100%;
+	}
   	.timer01{
 			margin-top: 0;
 		}
