@@ -268,7 +268,9 @@ border-radius: 3px;
 
 }
 
-
+.call-mobile{
+	display: none;
+}
 .check-fines .captcha-block .vehicle_number:focus {border-color:#C5C9C9;}
 
 .flush_form:hover {opacity:0.75;}
@@ -2344,6 +2346,9 @@ header input[type="submit"] {
 
 
  @media only screen and (max-width: 767px)  {
+	.clients .comment br{
+		display: none
+	}
 	.discount_block-text{
 		background-color: rgba(0, 0, 0, 0.5);
 		border: 2px dashed #000000;
@@ -2850,8 +2855,8 @@ header input[type="submit"] {
  @media only screen and (max-width: 460px) {
 	.discount_block{
     background-position-y: 216px;
+		height: 500px;
 	 }
-
 
     .repair_of_apartments {
         /*margin: 48px 0px 0px -11px;*/
@@ -3038,6 +3043,25 @@ header input[type="submit"] {
 	.description_block .dis_title{
 		margin: 52px 0;
 	}
+	.call-mobile{
+		display: block;
+		position: relative;
+		margin: 0;
+		width: 100%;
+		top: 0;
+left: 0;
+	}
+	.call-mobile p{
+		margin: 5px 0;
+color:#000000;
+padding: 0;
+	}
+	.call-mobile p a{
+		padding: 0;
+			}
+			.call-mobile span{
+				display: none;
+					}
 }
 
   @media only screen and (max-width: 422px) {
@@ -3087,10 +3111,7 @@ header input[type="submit"] {
         width: 100%;
     }
 
-    .call {
-        width: 205px;
-        margin: 0 auto;
-    }
+
 
    .wrap_callback {
          width: 100%;
