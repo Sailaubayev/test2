@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Colorbox Form</title>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="form_wrap">
+		<div class="form_left">
+			<p><strong>Страхование</strong><br><b>автомобилей</b></p>
+			<ul>
+				<li>Оформление с учетом всех скидок (кбм)- до 50% экономия</li>
+				<li>Без наценок и переплат. Цены как в страховой компании согласно ФЗ-40</li>
+				<li>Все страховые компании в одном месте</li>
+				<li>Бесплатная доставка ОСАГО на дом</li>
+				<li>Оформление КАСКО</li>
+			</ul>
+				        
+				<p>от <strong>3 500 рублей</strong></p>
+		</div>
+		<div class="form_right">
+			<p><b>Скидка 5 000 руб при заказе от 5 полюсов!</b></p>
+			<form action="" onsubmit="callb('Заказ пропуска СК',this);return false;">
+				<div class="input_wrap">
+					<div class="img_name"></div>
+					<input required id="name" name="name" type="text" placeholder="Ваше имя">
+				</div>
+				
+				<div class="input_wrap">
+					<div class="img_phone"></div>
+					<input required id="phone" name="phone" type="text" placeholder="Номер телефона">
+				</div>
+				<br>
+				<input type="submit" value="Заказать ОСАГО, КАСКО">
+			</form>
+			<div class="bottom_text">
+				<p><strong>Мы работаем без предоплаты!</strong></p>
+				<p>100% оригинальный полис</p>
+				<p>Уже через 30 минут после обращения!</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

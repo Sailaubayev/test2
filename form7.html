@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Colorbox Form</title>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="form_wrap">
+		<div class="form_left">
+			<p><strong>ТТК</strong><br> пропуск на <b>1 год</b></p>
+			<ul>
+				<li>Без предоплаты</li>
+				<li>Бесплатный временный пропуск на 10 дней</li>
+				<li>Оплата по факту получения постоянного пропуска</li>
+				<li>Проверка по базе департамента транспорта</li>
+				<li>Гарантия получения пропуска 100%</li>
+				<li>По договору и без договора</li>
+				<li>Наличный и безналичный расчет</li>
+			</ul>
+				        
+				<p>за <strong>10 000 рублей</strong></p>
+		</div>
+		<div class="form_right">
+			<p><b>Скидка 10 000 руб при заказе от 5 шт!</b></p>
+			<form action="" onsubmit="callb('Заказ пропуска ТТК',this);return false;">
+				<div class="input_wrap">
+					<div class="img_name"></div>
+					<input required id="name" name="name" type="text" placeholder="Ваше имя">
+				</div>
+				
+				<div class="input_wrap">
+					<div class="img_phone"></div>
+					<input required id="phone" name="phone" type="text" placeholder="Номер телефона">
+				</div>
+				<br>
+				<input type="submit" value="Заказать пропуск">
+			</form>
+			<div class="bottom_text">
+				<p><strong>Мы работаем без предоплаты!</strong></p>
+				<p>Временный пропуск на 10 дней бесплатно</p>
+				<p>Уже через 2 часа после обращения!</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

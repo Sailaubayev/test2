@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Callback</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/callback.css">
+</head>
+<body>
+	<div class="call_wrap">
+	 	<form action="" id="callback" onsubmit="callb('Заказ звонка',this);return false;">
+	 		<span>Оставь заявку и получи специальное уникальное предложение!</span>
+	 		<br>
+	 		<div class="input_wrap">
+					<div class="img_name"></div>
+					<input required id="name" name="name" type="text" placeholder="Ваше имя">
+			</div>
+
+	 		<div class="input_wrap">
+					<div class="img_phone"></div>
+					<input required id="phone" name="phone" type="text" placeholder="Ваш телефон">
+			</div>
+	 		<br>
+	 		<span>Бесплатные пропуска на 10 дней + Диагностическая карта в подарок!</span>
+	 		<br>
+	 		<input type="submit" class="sub">
+	 	</form>
+	 </div> 
+</body>
+</html>
