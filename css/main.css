@@ -511,11 +511,164 @@ header{
 	height: auto;
 }
 
-.menu_nav{
-	display: none;
+.menu_nav {
+	display: block;
+	-webkit-font-smoothing: antialiased;
+	background: #bbbbbb;
+	position: fixed;
+	z-index: 20;
+	top: 0;
+	height: 60px;
+	top: -100%;
+	width: 100%;
+	left: 0;
+	transition: 0.5s all;
 }
-.hamburger{
+
+.menu_ul{
+	padding: 0;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.menu_li {
+	font-family: "RobotoSlab";
+	position: relative;
+	list-style-type: none;
+	color: #000000;
+	font-size: 22px;
+}
+
+.menu_li:nth-child(8) {
+	display: none
+}
+.menu_li:nth-child(9) {
+	display: none
+}
+.menu_li:hover {
+	text-decoration: underline;
+}
+
+.menu_li:nth-child(1) {
+	display: none
+}
+
+.menu_li:nth-child(1):hover {
+	background-color: transparent;
+}
+
+.menu_li a {
+	font-family: "RobotoSlab";
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	color: #000000;
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+}
+
+.menu_input{
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	height: 120%;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	margin-top: 10px;
+	background-color: #ff0000;
+}
+
+.menu_hidden {
 	display: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 120%;
+	background-color: rgba(0, 0, 0, 0.2);
+	z-index: 15;
+}
+
+.hamburger {
+	display: block;
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 10px;
+	border-radius: 4px;
+	transition: 0.5s all;
+	z-index: 11;
+}
+
+.hamburger:hover {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.hamburger-line {
+	display: inline-block;
+	border-radius: 3px;
+	width: 34px;
+	height: 4px;
+	background: #ff0000;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	transition: background 0.6s 0s ease;
+}
+
+.hamburger-line:after,
+.hamburger-line:before {
+	border-radius: 3px;
+	transition: top 0.2s 0.4s ease, -webkit-transform 0.3s ease;
+	content: '';
+	position: absolute;
+	top: -10px;
+	left: 0;
+	background: #ff0000;
+	display: inline-block;
+	width: 34px;
+	height: 4px;
+}
+
+.hamburger-line:before {
+	top: 10px;
+}
+
+.menu-open .menu_nav {
+	top: 0;
+}
+
+.menu-open .hamburger {
+	top: 80px;
+}
+
+.menu-open .hamburger-line {
+	background: transparent;
+}
+
+.menu-open .hamburger-line:before,
+.menu-open .hamburger-line:after {
+	top: 0;
+	transition: top 0.2s ease, -webkit-transform 0.2s 0.4s ease;
+	-webkit-transform: rotate3d(0, 0, 1, 45deg);
+	transform: rotate3d(0, 0, 1, 45deg);
+	-webkit-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.menu-open .hamburger-line:after {
+	transform: rotate3d(0, 0, 1, -45deg);
+	-webkit-transform: rotate3d(0, 0, 1, -45deg);
 }
 
 .logo{
@@ -731,27 +884,20 @@ color: #3b3a3a;
 
 .pageup img{
 	width: 100%;
-};
-
-
-
-
-
-
-
+}
 
 .repair_of_apartments{
-	width: 502px;
-    color: #3a3a3a;
-    font-size: 23px;
-    font-weight: 700;
-    line-height: 25px;
-    text-align: center;
-    font-family: "OpenSansExtraBold";
-    margin: 0px 0 0 43px;
-	}
+	color: #3a3a3a;
+	font-size: 23px;
+	font-weight: 700;
+	line-height: 25px;
+	text-align: center;
+	font-family: "OpenSansExtraBold";
+	margin: 0px 0 0 43px;
+}
 
-.repair_of_apartments span{font-family: "OpenSansLight";
+
+.discount_block .repair_of_apartments span{font-family: "OpenSansLight";
     font-size: 17px;
 	}
 
@@ -804,12 +950,22 @@ color: #3b3a3a;
 	font-family: "RobotoSlabBold";
 }	
 	
-	
-.description_block{
+.description_of_services .description_block{
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
-	height: auto;
+}
+
+.description_ul .description_block{
+	width: 310px;
+}
+.description_ul{
+	padding-left: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
 }
 
 .description_block .calc{
@@ -1003,7 +1159,16 @@ padding: 35px 0;
     line-height: 12px;
 	}
 	
-	
+	.footer .row{
+display: flex;
+justify-content: center;
+	}
+
+	.footer_block{
+		width: 100%;
+    display: flex;
+    justify-content: center;
+	}
 .five_problems .or{
 margin-top: -19px;
     background-color: #ffffff;
@@ -1081,12 +1246,16 @@ margin-top: -12px;
     z-index: 3;
 }
 
+.excellent_renovation3 .excellent_renovation0{
+	background-position-y: 55px;
+}
+
 .indents2{
 /*    padding-top: 244px;*/
     position: relative;
     background: transparent url("../img/bg_blue.png") no-repeat scroll center bottom;
-    height: 300px;
-    padding-top: 100px;
+    height: 270px;
+    padding-top: 50px;
     z-index: 1;
 }
 
@@ -2158,7 +2327,7 @@ background: url(../img/call_out.png) no-repeat left center;
 .uslugi .arrowRight {
     right: -4px;
 }
-.description_block {
+.description_of_services .description_block {
     width: 200px;
     margin: 0 16px;
 }
@@ -2346,6 +2515,9 @@ header input[type="submit"] {
 
 
  @media only screen and (max-width: 767px)  {
+	.menu_li a {
+		text-align:start;
+	}
 	.clients .comment br{
 		display: none
 	}
@@ -2473,6 +2645,7 @@ header input[type="submit"] {
 	
 	.menu_ul{
 		padding: 0;
+		display: block;
 	}
 
 	.menu_li {
@@ -2486,9 +2659,10 @@ header input[type="submit"] {
 	}
 	
 	.menu_li:nth-child(8) {
+		display: block;
 		border: 0;
 	}
-	
+
 	.menu_li:hover {
 		background-color: rgba(0, 0, 0, 0.3);
 	}
@@ -2496,6 +2670,7 @@ header input[type="submit"] {
 	.menu_li:nth-child(1) {
 		text-align: center;
 		padding-bottom: 10px;
+		display: block;
 	}
 	
 	.menu_li:nth-child(1):hover {
@@ -2595,6 +2770,7 @@ header input[type="submit"] {
 	
 	.menu-open .hamburger {
 		left: 80%;
+		top: 10px;
 		transform: translateX(0);
 	}
 	
@@ -2715,7 +2891,7 @@ header input[type="submit"] {
         left: 50%;
     }
 
-    .description_block {
+    .description_of_services .description_block {
         position: relative;
         left: 50%;
         margin-bottom: 25px;
@@ -3021,6 +3197,9 @@ header input[type="submit"] {
 		}
    }
  @media only screen and (max-width: 500px) {
+	.menu_li:nth-child(9) {
+		display: block;
+	}
 	 .call{
 		 display: none;
 	 }
@@ -3037,7 +3216,7 @@ header input[type="submit"] {
 	right: 0;
 	justify-content: flex-end;
 	}
-	.description_block{
+	.description_of_services .description_block{
 		display: flex;
 	}
 	.description_block .dis_title{
