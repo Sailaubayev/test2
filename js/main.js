@@ -160,6 +160,19 @@ function callb(subj, form) {
 	});
 }
 
+function callb(subj, form) {
+	var name = $(form).find('#name2').val();
+	var phone = $(form).find('#phone2').val();
+	$.ajax({
+		url: 'mail.php',
+		type: 'post',
+		data: { name: name, phone: phone, subj: subj },
+		success: function (data) {
+			$(form).html(data);
+		}
+	});
+}
+
 
 jQuery(document).ready(function ($) {
 
@@ -328,6 +341,7 @@ jQuery(document).ready(function ($) {
 	smoothScroll("a[href^='#wrapper']");
 	smoothScroll("a[href^='#ceni']");
 	smoothScroll("a[href^='#bonus']");
+	smoothScroll("a[href^='#monitor']");
 	smoothScroll("a[href^='#check']");
 	smoothScroll("a[href^='#review']");
 	smoothScroll("a[href^='#footer']");
@@ -343,4 +357,6 @@ jQuery(document).ready(function ($) {
 			$(".exitblock").remove();
 		}
 	});
+
+
 })
